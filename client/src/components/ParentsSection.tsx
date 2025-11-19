@@ -24,7 +24,7 @@ export function ParentsSection() {
             Notre Histoire
           </h2>
           <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto">
-            Avec la bénédiction de nos familles, nous avons le plaisir de vous inviter à célébrer notre union
+            Nous avons le plaisir de vous inviter à célébrer notre union
           </p>
         </motion.div>
 
@@ -41,11 +41,7 @@ export function ParentsSection() {
                 <span className="font-serif text-6xl text-primary">A</span>
               </div>
             </div>
-            <h3 className="font-serif text-3xl md:text-4xl text-foreground mb-3">Ahmed</h3>
-            <p className="font-sans text-base text-muted-foreground mb-2">Fils de</p>
-            <p className="font-sans text-lg text-foreground font-medium" data-testid="text-groom-parents">
-              Saadi & Yasmina
-            </p>
+            <h3 className="font-serif text-3xl md:text-4xl text-foreground">Ahmed</h3>
           </motion.div>
 
           <div className="hidden md:flex justify-center md:absolute md:left-1/2 md:-translate-x-1/2 md:top-1/2 md:-translate-y-1/2">
@@ -72,11 +68,7 @@ export function ParentsSection() {
                 <span className="font-serif text-6xl text-primary">L</span>
               </div>
             </div>
-            <h3 className="font-serif text-3xl md:text-4xl text-foreground mb-3">Lyna</h3>
-            <p className="font-sans text-base text-muted-foreground mb-2">Fille de</p>
-            <p className="font-sans text-lg text-foreground font-medium" data-testid="text-bride-parents">
-              Ses parents
-            </p>
+            <h3 className="font-serif text-3xl md:text-4xl text-foreground">Lyna</h3>
           </motion.div>
         </div>
 
