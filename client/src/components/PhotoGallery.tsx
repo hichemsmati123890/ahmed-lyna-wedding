@@ -2,22 +2,18 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { X } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import couplePortrait1 from "@assets/generated_images/Couple_portrait_1_01102254.png";
-import coupleWalking from "@assets/generated_images/Couple_walking_together_b57ebeb2.png";
-import coupleCloseup from "@assets/generated_images/Couple_close-up_portrait_c5e22bc8.png";
-import coupleDancing from "@assets/generated_images/Couple_dancing_5d03bdcb.png";
-import coupleLaughing from "@assets/generated_images/Couple_laughing_candid_5391497d.png";
-import coupleSilhouette from "@assets/generated_images/Couple_sunset_silhouette_d89b1033.png";
-import coupleBouquet from "@assets/generated_images/Couple_with_bouquet_f01772ec.png";
+import venueArch from "@assets/IMG-20240917-WA0002-768x1024_1763586752561.jpg";
+import venueHall1 from "@assets/IMG-20240917-WA0006_1763586752562.jpg";
+import venueHall2 from "@assets/IMG-20240917-WA0008_1763586752562.jpg";
+import venueCake from "@assets/IMG-20240917-WA0010_1763586752563.jpg";
+import venueTables from "@assets/IMG-20240917-WA0014-1024x682_1763586752563.jpg";
 
 const photos = [
-  { src: couplePortrait1, alt: "Ahmed et Lyna - Portrait 1" },
-  { src: coupleWalking, alt: "Ahmed et Lyna marchant ensemble" },
-  { src: coupleCloseup, alt: "Ahmed et Lyna - Portrait rapproché" },
-  { src: coupleDancing, alt: "Ahmed et Lyna dansant" },
-  { src: coupleLaughing, alt: "Ahmed et Lyna riant ensemble" },
-  { src: coupleSilhouette, alt: "Ahmed et Lyna au coucher du soleil" },
-  { src: coupleBouquet, alt: "Ahmed et Lyna avec bouquet" },
+  { src: venueArch, alt: "Arche florale avec tapis rouge - Salle EL MOUDAYNA" },
+  { src: venueHall1, alt: "Salle des fêtes décorée - EL MOUDAYNA TICHY" },
+  { src: venueHall2, alt: "Vue de la salle avec lustres et décorations" },
+  { src: venueCake, alt: "Gâteau de mariage et décoration de la salle" },
+  { src: venueTables, alt: "Tables élégamment décorées pour la réception" },
 ];
 
 export function PhotoGallery() {
