@@ -73,7 +73,7 @@ export function RsvpForm() {
   return (
     <section
       ref={ref}
-      className="py-16 md:py-24 lg:py-32 px-6 bg-background"
+      className="py-16 md:py-24 lg:py-32 px-6 bg-gradient-to-b from-accent/10 via-background to-accent/10"
       data-testid="section-rsvp"
     >
       <div className="max-w-2xl mx-auto">
@@ -96,7 +96,7 @@ export function RsvpForm() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <Card className="p-8 md:p-12 border-2">
+          <Card className="p-8 md:p-12 border-2 shadow-lg backdrop-blur-sm bg-card/95">
             {isSuccess ? (
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}

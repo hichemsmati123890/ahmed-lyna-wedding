@@ -44,7 +44,7 @@ export function CountdownTimer() {
   return (
     <section
       ref={ref}
-      className="py-16 md:py-24 lg:py-32 px-6 bg-accent/30"
+      className="py-16 md:py-24 lg:py-32 px-6 bg-gradient-to-br from-accent/20 via-background to-accent/30"
       data-testid="section-countdown"
     >
       <div className="max-w-6xl mx-auto">
@@ -70,7 +70,7 @@ export function CountdownTimer() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
             >
-              <Card className="p-6 md:p-8 text-center hover-elevate" data-testid={unit.testId}>
+              <Card className="p-6 md:p-8 text-center hover-elevate shadow-md border-2" data-testid={unit.testId}>
                 <div className="font-serif text-5xl md:text-6xl lg:text-7xl text-primary mb-3">
                   {unit.value.toString().padStart(2, "0")}
                 </div>

@@ -24,7 +24,7 @@ export function PhotoGallery() {
   return (
     <section
       ref={ref}
-      className="py-16 md:py-24 lg:py-32 px-6 bg-accent/30"
+      className="py-16 md:py-24 lg:py-32 px-6 bg-gradient-to-b from-background via-accent/20 to-background"
       data-testid="section-gallery"
     >
       <div className="max-w-6xl mx-auto">
@@ -49,7 +49,7 @@ export function PhotoGallery() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.1 * index }}
-              className="relative aspect-square overflow-hidden rounded-2xl cursor-pointer group"
+              className="relative aspect-square overflow-hidden rounded-2xl cursor-pointer group shadow-md hover:shadow-xl transition-shadow duration-300"
               onClick={() => setSelectedPhoto(index)}
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
@@ -64,8 +64,9 @@ export function PhotoGallery() {
                 src={photo.src}
                 alt={photo.alt}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
               />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.div>
           ))}
         </div>

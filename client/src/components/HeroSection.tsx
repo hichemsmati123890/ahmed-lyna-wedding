@@ -17,7 +17,8 @@ export function HeroSection({ onRsvpClick }: HeroSectionProps) {
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
       
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-rose-950/50 via-rose-900/40 to-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-950/20 via-transparent to-rose-950/20" />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
