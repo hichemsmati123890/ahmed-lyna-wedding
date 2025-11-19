@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: ahmed-lyna-wedding
+    env: node
+    buildCommand: npm install && npm run db:push
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: wedding-db
+          property: connectionString
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_PASSWORD_HASH
+        value: $2b$10$n7UaG5XVdWKDCNT28u0GROlJOZXeyvPu2y18JRJzZ65IzdhGLj/Y.
+
+databases:
+  - name: wedding-db
+    databaseName: wedding_rsvps
+    user: wedding_user
