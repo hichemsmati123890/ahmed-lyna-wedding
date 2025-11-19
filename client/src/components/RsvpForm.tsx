@@ -38,10 +38,10 @@ export function RsvpForm() {
     defaultValues: {
       fullName: "",
       email: "",
-      phone: "",
+      phone: undefined,
       numberOfGuests: 1,
-      dietaryRestrictions: "",
-      message: "",
+      dietaryRestrictions: undefined,
+      message: undefined,
     },
   });
 
@@ -176,6 +176,7 @@ export function RsvpForm() {
                         <FormControl>
                           <Input
                             {...field}
+                            value={field.value || ""}
                             type="tel"
                             placeholder="+213 XX XX XX XX XX"
                             data-testid="input-phone"
@@ -227,6 +228,7 @@ export function RsvpForm() {
                         <FormControl>
                           <Textarea
                             {...field}
+                            value={field.value || ""}
                             placeholder="Allergies, régimes spéciaux, etc."
                             rows={3}
                             data-testid="input-dietary"
@@ -248,6 +250,7 @@ export function RsvpForm() {
                         <FormControl>
                           <Textarea
                             {...field}
+                            value={field.value || ""}
                             placeholder="Un petit mot pour nous..."
                             rows={4}
                             data-testid="input-message"
