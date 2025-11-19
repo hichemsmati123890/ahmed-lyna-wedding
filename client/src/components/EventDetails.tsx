@@ -42,11 +42,11 @@ export function EventDetails() {
                 <h3 className="font-sans text-lg font-semibold text-foreground mb-1">
                   Date et Heure
                 </h3>
-                <p className="font-sans text-base text-muted-foreground">
+                <p className="font-sans text-base text-foreground font-medium">
                   29 Décembre 2025
                 </p>
-                <p className="font-sans text-sm text-muted-foreground">
-                  Les détails horaires vous seront communiqués
+                <p className="font-sans text-base text-muted-foreground">
+                  À partir de 11h00
                 </p>
               </div>
             </div>

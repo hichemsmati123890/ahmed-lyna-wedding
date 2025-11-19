@@ -14,7 +14,7 @@ Site web d'invitation de mariage dynamique et élégant pour Ahmed et Lyna, cél
 ## Informations du mariage
 - **Mariés**: Ahmed et Lyna
 - **Parents du marié**: Saadi (père), Yasmina (mère)
-- **Date**: 29 décembre 2025
+- **Date**: 29 décembre 2025 à 11h00
 - **Lieu**: Salle des fêtes EL MOUDAYNA, TICHY
 
 ## Architecture du projet

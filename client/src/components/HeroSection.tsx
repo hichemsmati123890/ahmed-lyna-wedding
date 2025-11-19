@@ -75,7 +75,7 @@ export function HeroSection({ onRsvpClick }: HeroSectionProps) {
           className="font-sans text-xl md:text-2xl text-white/90 mb-3 tracking-wide"
           data-testid="text-hero-date"
         >
-          29 Décembre 2025
+          29 Décembre 2025 à 11h00
         </motion.p>
 
         <motion.p
